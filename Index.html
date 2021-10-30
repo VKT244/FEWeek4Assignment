@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width. initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body{
+            background-color:rgb(49, 114, 92); 
+        }
+        </style>
+</head>
+<body class="container">
+    <br>
+    <div class="card bg-light">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new player">New Player</label>
+                        <input type="text" class="form-control" id="new player" placeholder="Player Name">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="jersey number">Jersey Number</label>
+                        <input type="number" min="0" class="form-control" id="jersey number" placeholder="Select Jersey Number">
+
+                </div>
+                <div>
+                    <button id="add" class="btn btn-dark btn-sm">Create</button>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <table id="list" class="table table-striped table-hover">
+            <tr>
+                <th>Player Name</th>
+                <th>Jersey Number</th>
+            </tr>
+        </table>
+
+<script src="index.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
